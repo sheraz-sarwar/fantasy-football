@@ -10,7 +10,7 @@
 
     <!-- amCharts javascript code -->
     <script type="text/javascript">
-        AmCharts.makeChart("chartdiv",
+        test = AmCharts.makeChart("chartdiv",
             {
                 "type": "serial",
                 "categoryField": "category",
@@ -258,6 +258,9 @@
                 ]
             }
         );
+        
+        test.showGraphsBalloon('belal');
+        test.showGraphsBalloon(AmCharts.charts[0].graphs[0]);
     </script>
 </head>
 <body style="background-color: #FAFAFA">
