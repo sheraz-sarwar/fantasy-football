@@ -368,8 +368,10 @@
             "scrollbarHeight": 40
         };
 
-        var chartCursor;
-        chartCursor = new AmCharts.ChartCursor();
+        var balloon = chart.balloon;
+        balloon.verticalPadding = 3;
+
+        var chartCursor = new AmCharts.ChartCursor();
         chartCursor.cursorAlpha = 0;
         chartCursor.zoomable = false;
         chartCursor.categoryBalloonEnabled = false;
